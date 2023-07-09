@@ -1,0 +1,64 @@
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--Dark-Blue);
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  display: grid;
+  place-content: center;
+}
+main {
+  max-width: 375px;
+  background-color: var(--Dark-Grayish-Blue);
+  padding: 2rem;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  color: var(--Neon-Green);
+  font-size: 0.8rem;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+}
+.advice-text {
+  margin-bottom: 2rem;
+}
+.advice-text p {
+  color: var(--Light-Cyan);
+  text-align: center;
+}
+.advice-text img {
+  width: 100%;
+}
+.dice-wrapper {
+  width: 70px;
+  height: 70px;
+  background-color: var(--Neon-Green);
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: -65px;
+}
+.dice-wrapper:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px var(--Neon-Green);
+}
+.dice-wrapper img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1440px) {
+  main {
+    max-width: 600px;
+  }
+}
