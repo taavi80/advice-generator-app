@@ -13,7 +13,7 @@ async function fetchAdvice() {
     const adviceId = document.getElementById("adviceId");
     const adviceText = document.getElementById("adviceText");
     adviceId.textContent = `Advice #${data.slip.id}`;
-    adviceText.textContent = advice;
+    adviceText.innerHTML = `<q>${advice}</q>`;
   } catch (error) {
     console.log("Error fetching advice:", error);
   }
