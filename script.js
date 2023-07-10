@@ -1,10 +1,12 @@
 const diceWrapper = document.querySelector(".dice-wrapper");
 
-diceWrapper.addEventListener("click", async function () {
+diceWrapper.addEventListener("touchstart", function () {
   diceWrapper.classList.add("hovered");
+});
 
-  await new Promise((resolve) => setTimeout(resolve, 0));
+diceWrapper.addEventListener("click", async function () {
   diceWrapper.classList.remove("hovered");
+  await new Promise((resolve) => setTimeout(resolve, 0));
   fetchAdvice();
 });
 
