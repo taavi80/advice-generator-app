@@ -1,7 +1,11 @@
 const diceWrapper = document.querySelector(".dice-wrapper");
 
-diceWrapper.addEventListener("click", function () {
+diceWrapper.addEventListener("click", () => {
   diceWrapper.classList.toggle("hovered");
+
+  setTimeout(() => {
+    diceWrapper.classList.remove("hovered");
+  }, 300);
 });
 
 window.addEventListener("load", fetchAdvice);
