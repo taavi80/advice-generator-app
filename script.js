@@ -13,7 +13,7 @@ diceWrapper.addEventListener("click", function () {
 async function fetchAdvice() {
   try {
     const response = await fetch(
-      `https://api.adviceslip.com/advice?t=${Math.random()}`
+      `https://api.adviceslip.com/advice?param=${Math.random()}`
     );
     const data = await response.json();
     const advice = data.slip.advice;
