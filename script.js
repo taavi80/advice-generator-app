@@ -1,11 +1,11 @@
-const diceImage = document.querySelector(".dice-wrapper");
+const diceWrapper = document.querySelector(".dice-wrapper");
 
-diceImage.addEventListener("click", () => {
+diceWrapper.addEventListener("click", function () {
   diceWrapper.classList.toggle("hovered");
-  fetchAdvice;
 });
 
 window.addEventListener("load", fetchAdvice);
+diceWrapper.addEventListener("click", fetchAdvice);
 
 async function fetchAdvice() {
   try {
