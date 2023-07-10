@@ -14,7 +14,9 @@ window.addEventListener("load", fetchAdvice);
 
 async function fetchAdvice() {
   try {
-    const response = await fetch("https://api.adviceslip.com/advice");
+    const response = await fetch(
+      `https://api.adviceslip.com/advice?t=${Math.random()}`
+    );
     const data = await response.json();
     const advice = data.slip.advice;
 
