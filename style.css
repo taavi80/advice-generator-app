@@ -46,7 +46,8 @@ h1 {
   position: relative;
   margin-bottom: -65px;
 }
-.dice-wrapper:hover {
+.dice-wrapper:hover,
+.dice-wrapper:focus {
   cursor: pointer;
   box-shadow: 0 0 20px var(--Neon-Green);
 }
