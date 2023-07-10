@@ -1,15 +1,14 @@
 const diceWrapper = document.querySelector(".dice-wrapper");
 
-// diceWrapper.addEventListener("touchstart", function () {
-//   diceWrapper.classList.add("hovered");
-//   setTimeout(function () {
-//     diceWrapper.classList.remove("hovered");
-//   }, 200);
-//   fetchAdvice();
-// });
-
 window.addEventListener("load", fetchAdvice);
-diceWrapper.addEventListener("click", fetchAdvice);
+
+diceWrapper.addEventListener("click", function () {
+  diceWrapper.classList.add("hovered");
+  setTimeout(function () {
+    diceWrapper.classList.remove("hovered");
+  }, 200);
+  fetchAdvice();
+});
 
 async function fetchAdvice() {
   try {

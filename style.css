@@ -51,9 +51,9 @@ h1 {
   cursor: pointer;
   box-shadow: 0 0 20px var(--Neon-Green);
 }
-/* .hovered {
+.hovered {
   box-shadow: 0 0 20px var(--Neon-Green);
-} */
+}
 
 .dice-wrapper img {
   position: absolute;
@@ -65,11 +65,5 @@ h1 {
 @media (min-width: 1440px) {
   main {
     max-width: 600px;
-  }
-}
-
-@media (hover: hover) {
-  .dice-wrapper:hover {
-    box-shadow: 0 0 20px var(--Neon-Green);
   }
 }
