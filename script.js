@@ -1,16 +1,14 @@
 const diceWrapper = document.querySelector(".dice-wrapper");
 
-diceWrapper.addEventListener("click", () => {
+diceWrapper.addEventListener("click", async function () {
   diceWrapper.classList.add("hovered");
 
-  setTimeout(() => {
-    diceWrapper.classList.remove("hovered");
-  }, 300);
+  await new Promise((resolve) => setTimeout(resolve, 0));
+  diceWrapper.classList.remove("hovered");
   fetchAdvice();
 });
 
 window.addEventListener("load", fetchAdvice);
-// diceWrapper.addEventListener("click", fetchAdvice);
 
 async function fetchAdvice() {
   try {
