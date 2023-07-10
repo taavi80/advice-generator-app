@@ -1,6 +1,9 @@
 const diceImage = document.querySelector(".dice-wrapper");
 
-diceImage.addEventListener("click", fetchAdvice);
+diceImage.addEventListener("click", () => {
+  diceWrapper.classList.toggle("hovered");
+  fetchAdvice;
+});
 
 window.addEventListener("load", fetchAdvice);
 
