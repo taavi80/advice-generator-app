@@ -50,6 +50,9 @@ h1 {
   cursor: pointer;
   box-shadow: 0 0 20px var(--Neon-Green);
 }
+.hovered {
+  box-shadow: 0 0 20px var(--Neon-Green);
+}
 
 .dice-wrapper img {
   position: absolute;
