@@ -1,16 +1,15 @@
 const diceWrapper = document.querySelector(".dice-wrapper");
 
-diceWrapper.addEventListener("touchstart", function () {
+diceWrapper.addEventListener("click", function () {
   diceWrapper.classList.add("hovered");
-});
 
-diceWrapper.addEventListener("click", async function () {
-  diceWrapper.classList.remove("hovered");
-  await new Promise((resolve) => setTimeout(resolve, 0));
-  fetchAdvice();
+  setTimeout(function () {
+    diceWrapper.classList.remove("hovered");
+  }, 200);
 });
 
 window.addEventListener("load", fetchAdvice);
+diceWrapper.addEventListener("click", fetchAdvice);
 
 async function fetchAdvice() {
   try {
