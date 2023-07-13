@@ -2,12 +2,7 @@ const diceWrapper = document.querySelector(".dice-wrapper");
 
 window.addEventListener("load", fetchAdvice);
 
-diceWrapper.addEventListener("touchstart", function () {
-  diceWrapper.blur();
-});
-
 diceWrapper.addEventListener("click", function () {
-  diceWrapper.blur();
   fetchAdvice();
 });
 
