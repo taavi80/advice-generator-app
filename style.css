@@ -28,14 +28,14 @@ h1 {
   letter-spacing: 2.6px;
   text-transform: uppercase;
 }
-.advice-text {
+.advice-text-wrapper {
   margin-bottom: 2rem;
 }
-.advice-text p {
+.advice-text-wrapper p {
   color: var(--Light-Cyan);
   text-align: center;
 }
-.advice-text img {
+.advice-text-wrapper img {
   width: 100%;
 }
 .dice-wrapper {
@@ -46,15 +46,6 @@ h1 {
   position: relative;
   margin-bottom: -65px;
 }
-.dice-wrapper:hover,
-.dice-wrapper:focus {
-  cursor: pointer;
-  box-shadow: 0 0 20px var(--Neon-Green);
-}
-.hovered {
-  box-shadow: 0 0 20px var(--Neon-Green);
-}
-
 .dice-wrapper img {
   position: absolute;
   left: 50%;
@@ -65,5 +56,18 @@ h1 {
 @media (min-width: 1440px) {
   main {
     max-width: 600px;
+  }
+}
+
+@media (hover: hover) {
+  .dice-wrapper:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px var(--Neon-Green);
+  }
+}
+
+@media (pointer: coarse) {
+  .dice-wrapper:active {
+    box-shadow: 0 0 20px var(--Neon-Green);
   }
 }

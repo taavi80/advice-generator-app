@@ -2,11 +2,12 @@ const diceWrapper = document.querySelector(".dice-wrapper");
 
 window.addEventListener("load", fetchAdvice);
 
+diceWrapper.addEventListener("touchstart", function () {
+  diceWrapper.blur();
+});
+
 diceWrapper.addEventListener("click", function () {
-  diceWrapper.classList.add("hovered");
-  setTimeout(function () {
-    diceWrapper.classList.remove("hovered");
-  }, 200);
+  diceWrapper.blur();
   fetchAdvice();
 });
 
