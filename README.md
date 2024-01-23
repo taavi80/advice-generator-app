@@ -4,7 +4,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ### Screenshot
 
-![](design/advice-generator-app_375.png)
+![](design/advice-generator-app_768.png)
 
 - Live Site URL: https://taavi80.github.io/advice-generator-app/
 
